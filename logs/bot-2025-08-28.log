@@ -1,0 +1,14 @@
+[2025-08-28 19:55:45] [INFO] net.dv8tion.jda.api.JDA - Login Successful!
+[2025-08-28 19:55:45] [INFO] amar.oreo.util.amarlogger - Bot is starting...
+[2025-08-28 19:55:46] [INFO] net.dv8tion.jda.internal.requests.WebSocketClient - Connected to WebSocket
+[2025-08-28 19:55:47] [INFO] net.dv8tion.jda.api.JDA - Finished Loading!
+[2025-08-28 21:54:19] [INFO] net.dv8tion.jda.api.JDA - Login Successful!
+[2025-08-28 21:54:19] [INFO] amar.oreo.util.amarlogger - Bot is starting...
+[2025-08-28 21:54:21] [INFO] net.dv8tion.jda.internal.requests.WebSocketClient - Connected to WebSocket
+[2025-08-28 21:54:22] [INFO] net.dv8tion.jda.api.JDA - Finished Loading!
+[2025-08-28 22:03:15] [INFO] amar.oreo.util.amarlogger - User [amaroreo] tried executing [[naokoadd]]
+[2025-08-28 23:32:11] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
+[2025-08-28 23:32:16] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
+[2025-08-28 23:32:29] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+[2025-08-28 23:32:33] [INFO] net.dv8tion.jda.internal.requests.WebSocketClient - Connected to WebSocket
+[2025-08-28 23:32:33] [INFO] net.dv8tion.jda.api.JDA - Finished (Re)Loading!

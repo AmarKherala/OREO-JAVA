@@ -1,16 +1,72 @@
-[2025-08-27 01:10:50] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
-[2025-08-27 01:10:53] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 4s
-[2025-08-27 01:10:57] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 8s
-[2025-08-27 01:32:28] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
-[2025-08-27 01:32:30] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 4s
-[2025-08-27 01:32:34] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 8s
-[2025-08-27 02:38:40] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
-[2025-08-27 02:38:42] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 4s
-[2025-08-27 02:38:46] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 8s
-[2025-08-27 03:00:48] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
-[2025-08-27 03:00:50] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 4s
-[2025-08-27 03:02:01] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 8s
-[2025-08-27 03:03:17] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 16s
-[2025-08-27 03:04:41] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 32s
-[2025-08-27 03:06:21] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 64s
-[2025-08-27 03:08:32] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 128s
+[2025-08-29 01:25:55] [ERROR] net.dv8tion.jda.api.requests.RestAction - RestAction queue returned failure: [ErrorResponseException] 10062: Failed to acknowledge this interaction, this can be due to 2 reasons:
+1. This interaction took longer than 3 seconds to be acknowledged, see https://jda.wiki/using-jda/troubleshooting/#the-interaction-took-longer-than-3-seconds-to-be-acknowledged
+2. This interaction could have been acknowledged by another process running for the same bot
+You can confirm this by checking if your bot replied, or the three dots in a button disappeared without saying 'This interaction failed', or you see '[Bot] is thinking...' for more than 3 seconds.
+To resolve this, try stopping all current processes for the bot that could be responsible, or resetting your bot token.
+You can reset your token at https://discord.com/developers/applications/1402718071948312819/bot
+net.dv8tion.jda.api.exceptions.ErrorResponseException: 10062: Unknown interaction
+	at net.dv8tion.jda.api.exceptions.ErrorResponseException.create(ErrorResponseException.java:206)
+	at net.dv8tion.jda.api.requests.Request.createErrorResponseException(Request.java:158)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.handleResponse(RestActionImpl.java:290)
+	at net.dv8tion.jda.internal.requests.restaction.interactions.InteractionCallbackImpl.handleResponse(InteractionCallbackImpl.java:141)
+	at net.dv8tion.jda.api.requests.Request.handleResponse(Request.java:306)
+	at net.dv8tion.jda.internal.requests.Requester$WorkTask.handleResponse(Requester.java:442)
+	at net.dv8tion.jda.internal.requests.Requester$WorkTask.access$300(Requester.java:378)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:245)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:157)
+	at net.dv8tion.jda.internal.requests.Requester.execute(Requester.java:140)
+	at net.dv8tion.jda.internal.requests.Requester$WorkTask.execute(Requester.java:406)
+	at net.dv8tion.jda.api.requests.SequentialRestRateLimiter$Bucket.execute(SequentialRestRateLimiter.java:478)
+	at net.dv8tion.jda.api.requests.SequentialRestRateLimiter$Bucket.run(SequentialRestRateLimiter.java:518)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: net.dv8tion.jda.api.exceptions.ContextException: null
+	at net.dv8tion.jda.api.exceptions.ContextException.here(ContextException.java:54)
+	at net.dv8tion.jda.api.requests.Request.<init>(Request.java:78)
+	at net.dv8tion.jda.internal.requests.RestActionImpl.queue(RestActionImpl.java:203)
+	at net.dv8tion.jda.internal.requests.restaction.interactions.InteractionCallbackImpl.queue(InteractionCallbackImpl.java:106)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:577)
+	at net.dv8tion.jda.api.requests.RestAction.queue(RestAction.java:543)
+	at amar.oreo.commands.info.ping.executeSlash(ping.java:18)
+	at amar.oreo.events.slashcommand.onSlashCommandInteraction(slashcommand.java:43)
+	at net.dv8tion.jda.api.hooks.ListenerAdapter.onEvent(ListenerAdapter.java:458)
+	at net.dv8tion.jda.api.hooks.InterfacedEventManager.handle(InterfacedEventManager.java:98)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handleInternally(EventManagerProxy.java:88)
+	at net.dv8tion.jda.internal.hooks.EventManagerProxy.handle(EventManagerProxy.java:70)
+	at net.dv8tion.jda.internal.JDAImpl.handleEvent(JDAImpl.java:173)
+	at net.dv8tion.jda.internal.handle.InteractionCreateHandler.handleCommand(InteractionCreateHandler.java:108)
+	at net.dv8tion.jda.internal.handle.InteractionCreateHandler.handleInternally(InteractionCreateHandler.java:79)
+	at net.dv8tion.jda.internal.handle.SocketHandler.handle(SocketHandler.java:39)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onDispatch(WebSocketClient.java:1009)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onEvent(WebSocketClient.java:892)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.handleEvent(WebSocketClient.java:870)
+	at net.dv8tion.jda.internal.requests.WebSocketClient.onBinaryMessage(WebSocketClient.java:1048)
+	at com.neovisionaries.ws.client.ListenerManager.callOnBinaryMessage(ListenerManager.java:385)
+	at com.neovisionaries.ws.client.ReadingThread.callOnBinaryMessage(ReadingThread.java:276)
+	at com.neovisionaries.ws.client.ReadingThread.handleBinaryFrame(ReadingThread.java:996)
+	at com.neovisionaries.ws.client.ReadingThread.handleFrame(ReadingThread.java:755)
+	at com.neovisionaries.ws.client.ReadingThread.main(ReadingThread.java:108)
+	at com.neovisionaries.ws.client.ReadingThread.runMain(ReadingThread.java:64)
+	at com.neovisionaries.ws.client.WebSocketThread.run(WebSocketThread.java:45)
+[2025-08-29 02:00:22] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
+[2025-08-29 02:00:39] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 4s
+[2025-08-29 02:00:43] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 8s
+[2025-08-29 02:01:08] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 16s
+[2025-08-29 02:01:35] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 32s
+[2025-08-29 02:02:42] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Got disconnected from WebSocket (Code 1000). Appending to reconnect queue
+[2025-08-29 02:03:46] [INFO] net.dv8tion.jda.internal.requests.WebSocketClient - Connected to WebSocket
+[2025-08-29 02:03:49] [INFO] net.dv8tion.jda.api.JDA - Finished (Re)Loading!
+[2025-08-29 02:58:15] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
+[2025-08-29 02:58:17] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 4s
+[2025-08-29 02:58:21] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 8s
+[2025-08-29 03:30:27] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
+[2025-08-29 03:30:29] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 4s
+[2025-08-29 03:30:33] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 8s
+[2025-08-29 04:50:03] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
+[2025-08-29 04:50:05] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 4s
+[2025-08-29 04:50:09] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 8s
+[2025-08-29 05:16:28] [ERROR] amar.oreo.util.amarlogger - JDA failed!
+[2025-08-29 05:16:28] [ERROR] amar.oreo.util.amarlogger - No JDA instace detected!
+[2025-08-29 05:17:05] [ERROR] amar.oreo.util.amarlogger - JDA failed!
+[2025-08-29 05:17:05] [ERROR] amar.oreo.util.amarlogger - No JDA instace detected!
