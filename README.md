@@ -10,8 +10,8 @@ If you want to set up your bot with this, here:
 3 - Compile and run :
   to automate compiling and restarting the bot in each change I've made updated.sh script. 
   Basically what it does is that it detects any change in the class path and executes the following :
-  # rm - rf out/$OUT_DIR : Remove old compiled classes. 
-  # javac -cp "lib/**" -d $OUT_DIR $(find src/main -name "*. java") : Re-compile. 
-  # java -cp "lib/*:$OUT_DIR" $CLASS_PATH : Run the bot (make the bot go online. 
+  ## rm - rf out/OUT_DIR : Remove old compiled classes. 
+  ## javac -cp "lib/**" -d OUT_DIR $(find src/main -name "*. java") : Re-compile. 
+  ## java -cp "lib/*:$OUT_DIR" $CLASS_PATH : Run the bot (make the bot go online. 
   Voallah! 
   Thanks!! 
