@@ -1,0 +1,16 @@
+[2025-08-27 01:10:50] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
+[2025-08-27 01:10:53] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 4s
+[2025-08-27 01:10:57] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 8s
+[2025-08-27 01:32:28] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
+[2025-08-27 01:32:30] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 4s
+[2025-08-27 01:32:34] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 8s
+[2025-08-27 02:38:40] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
+[2025-08-27 02:38:42] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 4s
+[2025-08-27 02:38:46] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 8s
+[2025-08-27 03:00:48] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 2s
+[2025-08-27 03:00:50] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 4s
+[2025-08-27 03:02:01] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 8s
+[2025-08-27 03:03:17] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 16s
+[2025-08-27 03:04:41] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 32s
+[2025-08-27 03:06:21] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 64s
+[2025-08-27 03:08:32] [WARN] net.dv8tion.jda.internal.requests.WebSocketClient - Reconnect failed! Next attempt in 128s

@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [       
+        
+        {
+            "type": "jdk",
+            "name": "Launch JDA Bot",
+            "request": "launch",
+            "mainClass": "amar.oreo.main",
+            "classPaths": [
+                "out",
+                "lib/*"
+            ]
+        }
+    ]
+}
